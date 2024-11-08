@@ -14,7 +14,7 @@ export default function Home() {
                 {imageUrls.map((url) => (
                     <div key={url} className="relative flex-1 basis-[300px] h-[200px]">
                         <Image
-                            loader={({ src, width }) => {
+                            loader={({ src }) => {
                                 // return ´${src}&img-format=webp&img-width=${width}´
                                 return src;
                             }}
